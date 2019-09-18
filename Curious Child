@@ -1,0 +1,9 @@
+from random import choice
+questions = ["Why is the sky blue?: ", "What is life?: ", "Why does the colour of the sky change?: "]
+questions = choice(questions)
+answer = input(questions).strip().title()
+
+while answer != "Just Because":
+    answer = input("Why?: ").strip().title()
+
+print("ohh...ok")
